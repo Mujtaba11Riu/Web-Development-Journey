@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selector </title>
+    <style>
+        /* .box:first-child{
+            background-color: aqua;
+        } */
+
+        /* .boxes{
+            background-color: blue;
+        } */
+         /* .box::first-line{
+            color: yellow;
+         } */
+
+
+         .boxes *{
+            color: blue;
+            border:2px solid black;
+         } 
+         
+      [data-color="primary"]{
+            margin-top: 55px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="boxes">
+        <!-- <div class="box"> Lorem </div> -->
+        <div data-color="primary" class="box"> 
+            i am the first box
+        </div>
+        <div class="box">Hi i am a boy </div>
+        <div class="box">Hi i am a boy </div>
+        <div class="box">Hi i am a boy </div>
+    </div>
+    
+</body>
+</html>

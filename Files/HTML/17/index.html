@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            color: black;
+            background-color: aqua;
+        }
+
+        /* div {
+            color: aqua;
+            background-color: black;
+        } */
+            /* class selector  */
+
+        .a{
+            color: aqua;
+            background-color: black;
+        }
+
+        /* child selector  */
+        div.a > p {
+            color: yellow;
+            background-color: red;
+        }
+        /* unique id seector  */
+        #one {
+            color: blue;
+            background-color: black;
+        }
+
+         div.b p {
+            color: yellow;
+            background-color: red;
+        }
+
+        /* universal selector  */
+        
+        * {
+            padding: 0;
+            margin: 0;
+        } 
+
+
+        /* pesudo  */
+
+        a:visited{
+            color:red;
+
+        }
+
+        a:link{
+            color: green;
+        }
+        a:active {
+            background-color:blue;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>My Selectors In Css </h1>
+    <div class="a">
+        First Div Selectors 
+        <p>
+            I am Child Div of class a 
+        </p>
+    </div>
+
+    <br>
+    <div class="b"> 
+        <article>
+            <p>Second Div Selectors all (p) are red div p code  </p>
+        </article>
+    </div>
+    <br>
+    <div>Third Div Selectolrs 
+
+    </div>
+    <br><br>
+    <a href="http://www.google.com" target="_blank">Goto Google</a>
+    <a href="http://www.facebook.com" target="_blank">Goto Facebook</a>
+    <br><br><br>
+    <div class="c">
+        Fourth Div Selectors 
+    </div>
+    <br>
+    <div class="d">
+        Fifth Div Selectors
+    </div>
+    <br>
+    <div id="one">Sixth  Div Selectolrs 
+
+    </div>
+    <br>
+</body>
+</html>

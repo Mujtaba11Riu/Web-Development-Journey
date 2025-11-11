@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variable</title>
+
+    <style>
+      :root {
+        --color: purple;
+        --seccolor: pink;
+        --defpad: 25px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul {
+        display: flex;
+        /* padding: var(--defpad); */
+      }
+      ul li {
+        list-style: none;
+        padding: var(--defpad);
+      }
+
+      ul li:first-child {
+        --color: rgb(179, 55, 55);
+        background-color: var(--color);
+      }
+      ul li:first-child,
+      ul li:last-child {
+        --color: rgb(179, 55, 55);
+        background-color: var(--color);
+      }
+
+      .nav {
+        height: 100px;
+        width: auto;
+        background-color: var(--color);
+      }
+
+      .container {
+        background-color: var(--seccolor);
+        margin: 6px;
+        padding: 30px;
+      }
+
+      .border {
+        padding: 20px;
+        margin: 20px;
+        border: 2px solid black;
+      }
+
+
+      .border2 {
+        border: red 2px solid;
+        padding: var(--defpad);
+        margin: 20px;
+      }
+
+      .c2 {
+        background-color: red;
+      }
+
+
+     
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <!-- <h2>
+        Hi...............
+    </h2> -->
+
+    <div class="border">
+      <div class="nav">
+        <ul>
+          <li>Home</li>
+          <li>Contact</li>
+          <li>About</li>
+          <li>Facebook</li>
+          <li>Linked in </li>
+          <li>GitHub </li>
+        </ul>
+      </div>
+
+
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+        tenetur unde ipsa molestiae commodi accusantium. Culpa eligendi, soluta
+        atque dicta quaerat officia! Quia veritatis voluptatibus rerum optio
+        expedita quasi eum qui sunt quis! Blanditiis commodi nemo distinctio
+        sint accusamus officiis iusto id, enim veniam laboriosam!
+      </div>
+    </div>
+
+
+
+
+
+    <div class="border2">
+      <ul class="c2">
+        <li>For First 1</li>
+        <li>For First 2</li>
+        <li>For First 3</li>
+        <li>For First 4</li>
+        <li>For First 5</li>
+      </ul>
+      
+      <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi perspiciatis fugiat magni architecto voluptatum vero nesciunt accusamus laborum quia. Tempore, consectetur eum! Dolorem reprehenderit, voluptate nihil atque voluptatum tenetur porro, unde beatae molestiae est modi quasi illo consequatur corporis eveniet eum vel? Ipsum illum, autem accusantium doloremque modi veritatis repellendus consequatur dolore placeat. Nisi, eos.</p>
+        </div>
+
+    </div>
+  </body>
+</html>
