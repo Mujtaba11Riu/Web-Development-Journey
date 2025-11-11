@@ -1,0 +1,21 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+
+
+
+h1{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#outer{
+    font-size: 25px;
+    font-style: normal;
+}
+#inner{
+    font-size: 12px;
+    font-style: oblique;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Static vs Responsive</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    /* 🔹 Static Box */
+    .static-box {
+      width: 800px;         /* fixed px width */
+      height: 200px;
+      background-color: tomato;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px auto;
+    }
+
+    /* 🔹 Responsive Box */
+    .responsive-box {
+      width: 80%;           /* % me width → responsive */
+      max-width: 800px;     /* bada screen par limit */
+      height: 200px;
+      background-color: teal;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px auto;
+    }
+
+    /* Media Query for Mobile */
+    @media (max-width: 600px) {
+      .responsive-box {
+        height: 150px;
+        background-color: purple; /* mobile par color change */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Static vs Responsive Example</h2>
+
+  <div class="static-box">
+    I am STATIC (always 800px wide)
+  </div>
+
+  <div class="responsive-box">
+    I am RESPONSIVE (adjust with screen)
+  </div>
+
+</body>
+</html>

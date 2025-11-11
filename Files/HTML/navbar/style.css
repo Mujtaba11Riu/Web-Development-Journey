@@ -1,0 +1,27 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    color:white;
+
+}
+
+h1{
+
+    color: red;
+}
+
+.nav{
+    height: 60px;
+    background-color: #0f1111;;
+    
+}
+
+#logo{
+    color: #f08804 ;
+}
+button{
+    background-color: #f08804;
+}
+a{
+    margin-right: 200px;
+}

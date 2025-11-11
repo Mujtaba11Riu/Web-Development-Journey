@@ -1,0 +1,51 @@
+
+
+.signal{
+    height: 300px;
+    width: 100px;;
+    background-color: rgb(2, 2, 16);
+    border: 2px solid red;
+    border-radius: 15px;
+    padding: 15px;
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical center */
+    align-items: center;
+    
+}
+
+.inner{
+    background-color: rgb(58, 234, 58);
+    border-color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 15px;
+
+}
+
+.subinner{
+    background-color:red;
+    border-color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 15px;
+
+}
+
+.finner{
+    background-color:rgb(255, 255, 0);
+    border-color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 15px;
+
+}
