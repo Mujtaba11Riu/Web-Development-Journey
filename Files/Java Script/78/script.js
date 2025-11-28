@@ -12,9 +12,18 @@ if(isNaN (a) || isNaN(b)){
 
 let sum = parseInt(a) + parseInt(b)
 
-console.log("The Sum is ", sum)
 
 
+
+    try { 
+
+// console.log("The Sum is ", sum)
+console.log("The Sum is ", sum*x)
+
+
+}  catch (error){
+    console.log("Error aa gaia bhai ")
+}
 
 
 
