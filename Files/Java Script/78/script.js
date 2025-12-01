@@ -15,6 +15,8 @@ let sum = parseInt(a) + parseInt(b)
 //lets try 
 
 
+
+
     try { 
 
 // console.log("The Sum is ", sum)
@@ -25,6 +27,9 @@ console.log("The Sum is ", sum*x)
     console.log("Error aa gaia bhai ")
 }
 
+finally {
+    console.log("Files are being closed and db connection is being closed ")
+}
 
 
 
