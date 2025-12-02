@@ -6,7 +6,7 @@ let b = prompt("Enter Second Number ")
 
 // let sum = a + b
 
-if(isNaN (a) || isNaN(b)){
+if (isNaN(a) || isNaN(b)) {
     throw SyntaxError("Sorry This Is Not Allowed")
 }
 
@@ -15,21 +15,25 @@ let sum = parseInt(a) + parseInt(b)
 //lets try 
 
 
-let x = 1;
+function main() {
 
-    try { 
+    let x = 1;
 
-// console.log("The Sum is ", sum)
-console.log("The Sum is ", sum*x)
+    try {
 
+        // console.log("The Sum is ", sum)
+        console.log("The Sum is ", sum * x)
+        return true
 
-}  catch (error){
-    console.log("Error aa gaia bhai ")
+    } catch (error) {
+        console.log("Error aa gaia bhai ")
+        return false
+    }
+
+    finally {
+        console.log("Files are being closed and db connection is being closed ")
+    }
+
 }
 
-finally {
-    console.log("Files are being closed and db connection is being closed ")
-}
-
-
-
+let c = main ()
