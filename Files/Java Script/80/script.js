@@ -41,11 +41,12 @@ class Lion extends Animal{
     }
 
  eats(){
+    super.eats()
         console.log("I am drinking")
     }
 
 
-} 
+ } 
 
 
 let a = new Animal("Motii");
