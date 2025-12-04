@@ -35,5 +35,6 @@ function main() {
     }
 
 }
+//ok
 
 let c = main ()
