@@ -14,18 +14,15 @@
             font-family: "Baloo 2", sans-serif;
             font-optical-sizing: auto;
             font-size: 30px;
-            
+
         }
-
-
-        
     </style>
 </head>
 
 <body>
 
     <div>
-        Inilating Hacking.......
+        Inilating Hacking
     </div>
 
 
@@ -33,7 +30,9 @@
 
     <script>
 
-         const addItem = async (item) => {
+
+
+        const addItem = async (item) => {
             await randomDelay();
             let div = document.createElement("div")
             div.innerHTML = item;
@@ -41,25 +40,46 @@
         }
 
         const randomDelay = () => {
-            return new Promise((resolve, reject )=>{
+            return new Promise((resolve, reject) => {
                 timeout = 1 * 6 * Math.random();
-                setTimeout(()=>{
+                setTimeout(() => {
                     resolve()
                 }, timeout * 1000);
             })
         }
 
-        let text = [" Initializing Hacking...",
-            "Reading Your Files...",
-            "Password Files Detected...",
-            "Sending all passwords and personal files to server...",
-            "Cleaning up..."]
 
-        for (const item of text) {
-            addItem(item)
+
+        async  function main() {
+
+            setInterval(() => {
+                let last = document.body.lastElementChild;
+                if (last.innerHTML.endsWith("...")) {
+                    last.innerHTML = last.innerHTML.slice(0, last.innerHTML.length - 3)
+                }
+                else {
+                    last.innerHTML = last.innerHTML + "."
+                }
+                // console.log("running"    )
+                last.innerHTML = last.innerHTML + "."
+
+            }, 100);
+
+
+            let text = [" Initialized now reading your data",
+                "Reading Your Files",
+                "Password Files Detected",
+                "Sending all passwords and personal files to server",
+                "Cleaning up"]
+
+            for (const item of text) {
+               await addItem(item)
+            }
+
         }
 
-       
+        main();
+
     </script>
 </body>
 
